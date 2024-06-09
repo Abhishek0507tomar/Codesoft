@@ -1,32 +1,31 @@
-# Prerequisites
-*.d
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+int main() {
+    // Initialize random seed
+    srand(time(0));
 
-# Precompiled Headers
-*.gch
-*.pch
+    // Generate random number between 1 and 100
+    int randomNumber = rand() % 100 + 1;
+    int guess = 0;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+    cout << "Guess the number (between 1 and 100): ";
 
-# Fortran module files
-*.mod
-*.smod
+    // Loop until the user guesses the correct number
+    while (true) {
+        cin >> guess;
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+        if (guess > randomNumber) {
+            cout << "Too high! Try again: ";
+        } else if (guess < randomNumber) {
+            cout << "Too low! Try again: ";
+        } else {
+            cout << "Congratulations! You guessed the number." << endl;
+            break;
+        }
+    }
 
-# Executables
-*.exe
-*.out
-*.app
+    return 0;
+}
