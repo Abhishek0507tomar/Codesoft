@@ -14,7 +14,7 @@ int main() {
     cout << "Guess the number (between 1 and 100): ";
 
     // Loop until the user guesses the correct number
-    while (true) {
+    while (1) {
         cin >> guess;
 
         if (guess > randomNumber) {
