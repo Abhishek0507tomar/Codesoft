@@ -1,3 +1,51 @@
 #include<iostream>
 using namespace std;
-int main
+int main()
+{
+int a,b,c,ch;
+cout<<"        Welcome to simple calculator";
+cout<<"Enter a:";
+cin>>a;
+cout<<"Enter b:";
+cin>>b;
+cout<<"Enter operation to perform:"<<endl;
+cout<<"1.Addition(+)"<<endl;
+cout<<"2.Substraction(-)"<<endl;
+cout<<"3.Multiplication(*)"<<endl;
+cout<<"4.Division(/)"<<endl;
+cout<<"5.Modulous(%)"<<endl;
+cout<<"Enter your choice:"<<endl;
+cin>>ch;
+if(ch==1)
+{
+c=a+b;
+cout<<"Addition of two numbers is:"<<c<<endl;
+}
+
+if(ch==1)
+{
+c=a-b;
+cout<<"Substraction of two numbers is:"<<c<<endl;
+}
+if(ch==1)
+{
+c=a*b;
+cout<<"Multiplication of two numbers  is:"<<c<<endl;
+}
+if(ch==1)
+{
+c=a/b;
+cout<<"Division of two numbers is:"<<c<<endl;
+}
+if(ch==1)
+{
+c=a%b;
+cout<<"Modules of two numbers is:"<<c<<endl;
+}
+if(ch>5)
+{
+cout<<"Invalid input:"<<endl;
+}
+return 0;
+
+}
